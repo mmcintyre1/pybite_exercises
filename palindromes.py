@@ -15,10 +15,11 @@ def load_dictionary():
 
 
 def is_palindrome(word):
-    """Return if word is palindrome, 'madam' would be one.
-       Case insensitive, so Madam is valid too.
-       It should work for phrases too so strip all but alphanumeric chars.
-       So "No 'x' in 'Nixon'" should pass (see tests for more)"""
+    """
+
+    :param word:
+    :return:
+    """
     normalized_word = [letter.lower() for letter in word if letter.isalnum()]
     return normalized_word == normalized_word[::-1]
 
